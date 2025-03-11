@@ -9,7 +9,12 @@ setup = function() {
   ellipse(335, 66, 70, 70);
 
   // Draw the tree and grass once
-  text("🌼", 0, 340);
-  text("🎈", 0, 200);
+  var x = 0
+  while(x < 380){
+  text("🌼", x, 340);
+  text("🌼", x-30, 380);
+  text("🎈", x, 200);
+  x += 60
+  }
 };
 
